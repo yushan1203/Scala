@@ -23,7 +23,7 @@ object TestValueTransfer {
     //int num = (int)2.5//java
     var num : Int = 2.7.toInt//scala
     //1.将数据由高精度转换为低精度，就需要使用到强制转换
-    var n1: Int = 2.5.toInt // 这个存在精度损失
+    var i1: Int = 2.5.toInt // 这个存在精度损失
     //2.强转符号只针对于最近的操作数有效，往往会使用小括号提升优先级
     var r1: Int = 10 * 3.5.toInt + 6 * 1.5.toInt  // 10 *3 + 6*1 = 36
     var r2: Int = (10 * 3.5 + 6 * 1.5).toInt  // 44.0.toInt = 44
@@ -36,10 +36,10 @@ object TestValueTransfer {
     //2.String类型转基本数值类型（语法：调用相关API）
     var s1 : String = "12"
 
-    var n1 : Byte = s1.toByte
-    var n2 : Short = s1.toShort
-    var n3 : Int = s1.toInt
-    var n4 : Long = s1.toLong
+    var a1 : Byte = s1.toByte
+    var a2 : Short = s1.toShort
+    var a3 : Int = s1.toInt
+    var a4 : Long = s1.toLong
 
 
   }
